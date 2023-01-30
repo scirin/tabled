@@ -208,7 +208,7 @@ impl RawStyle {
     }
 
     /// Get a left intersection char.
-    pub fn get_left_intersection(&self) -> Option<char> {
+    pub fn get_intersection_left(&self) -> Option<char> {
         self.borders.horizontal_left
     }
 
@@ -218,7 +218,7 @@ impl RawStyle {
     }
 
     /// Get a right intersection char.
-    pub fn get_right_intersection(&self) -> Option<char> {
+    pub fn get_intersection_right(&self) -> Option<char> {
         self.borders.horizontal_right
     }
 
@@ -238,7 +238,7 @@ impl RawStyle {
     }
 
     /// Get a top intersection char.
-    pub fn get_top_intersection(&self) -> Option<char> {
+    pub fn get_intersection_top(&self) -> Option<char> {
         self.borders.top_intersection
     }
 
@@ -258,7 +258,7 @@ impl RawStyle {
     }
 
     /// Get a bottom intersection char.
-    pub fn get_bottom_intersection(&self) -> Option<char> {
+    pub fn get_intersection_bottom(&self) -> Option<char> {
         self.borders.bottom_intersection
     }
 
