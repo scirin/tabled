@@ -187,6 +187,21 @@ impl RawStyle {
         self
     }
 
+    /// Get the current border characters.
+    pub fn get_borders(&self) -> Borders<char>{
+        self.borders.clone()
+    }
+
+    /// Check if left border is set.
+    pub fn has_left(&self) -> bool {
+        self.borders.vertical_left.is_some()
+    }
+
+    /// Check if right border is set.
+    pub fn has_right(&self) -> bool {
+    self.borders.vertical_right.is_some()
+    }
+
     /// Get a left char.
     pub fn get_left(&self) -> Option<char> {
         self.borders.vertical_left
